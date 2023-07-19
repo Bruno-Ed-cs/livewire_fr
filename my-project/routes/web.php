@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\Counter;
+use App\Http\Livewire\Index;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/contador', Counter::class);
+Route::get('/site', Index::class);
